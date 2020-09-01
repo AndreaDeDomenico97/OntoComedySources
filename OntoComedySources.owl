@@ -1,0 +1,4748 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/intel/ontologies/2020/6/untitled-ontology-17"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/intel/ontologies/2020/6/untitled-ontology-17">
+    <Prefix name="" IRI="http://www.semanticweb.org/intel/ontologies/2020/6/untitled-ontology-17"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="oa" IRI="http://www.w3.org/ns/oa/"/>
+    <Prefix name="dbo" IRI="http://dbpedia.org/ontology/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="cito" IRI="http://purl.org/spar/c4o/"/>
+    <Prefix name="doco" IRI="http://purl.org/spar/doco/"/>
+    <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
+    <Prefix name="frbr" IRI="http://purl.org/spar/frbr"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
+    <Prefix name="cidoc" IRI="http://www.cidoc-crm.org/cidoc-crm/"/>
+    <Prefix name="fabio" IRI="http://purl.org/spar/fabio/"/>
+    <Prefix name="efrbroo" IRI="http://erlangen-crm.org/efrbroo/"/>
+    <Declaration>
+        <Class abbreviatedIRI="efrbroo:F1_Work"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="efrbroo:F23_ExpressionFragment"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="doco:Chapter"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="doco:Line"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fabio:Book"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cidoc:E1_CRM_Entity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cidoc:E29_DesignOrProcedure"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cidoc:E52_TimeSpan"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cidoc:E53_Place"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cidoc:E54_Dimension"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cidoc:E57_Material"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cidoc:E58_MeasurementUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Annotation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Antiquary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Author"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cantica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Canto"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#E55_Type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fragment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fresco"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IconographicWork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Length"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LiteraryWork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Manuscript"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Material"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeasurementUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Miniature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mosaic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MosaicTechnique"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MosaicType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PaintingTechnique"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PanelPainting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Region"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scholar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Site"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Technique"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TextualBody"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TimeSpan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Verso"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Work"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="skos:Concept"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="oa:Annotation"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="oa:Selector"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="oa:TextPositionSelector"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="oa:TextualBody"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="foaf:Person"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/dc/elements/1.1/subject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/spar/frbrhasPart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/spar/frbrisPartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cito:cites"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc:P2_hasType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc:P45_consistOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc:P4_hasTimeSpan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc:P54_hasCurrentPermanentLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc:P89_fallsWithin"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cidoc:P91_hasUnit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#acquiredBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#citeAsIconographicSource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#citeAsLiterarySource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#composedOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#contains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#contributor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#creator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#endVerse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAnnotation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBody"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCanto"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCitingFragment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCommentary"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDim"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDimX"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDimY"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSelector"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTarget"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTimeSpan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasVerse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#inCanticum"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#inRegion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#inSite"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCanticumOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCantoOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isContainedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isVerseOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#startVerse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#subject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#typeOfMosaic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#typeOfSubstrate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#typeOfSubstrateMosaic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#typeOfSubstratePainting"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#typeOfTesserae"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usedTechnique"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usedTechniqueMosaic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usedTechniquePainting"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="oa:hasBody"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="oa:hasSelector"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="oa:hasSource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="oa:hasTarget"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="dbo:wikiPageID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="cidoc:P82_ongoingThroughout"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#bodyChars"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#bookTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#chNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#endDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasContent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#length"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#lineNum"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#startDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#wikiPageID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="oa:end"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="oa:start"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ann1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ann10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ann2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ann3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ann4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ann5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ann6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ann7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ann8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ann9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ant1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Auth1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Auth2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Auth3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Auth4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Auth5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Auth6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#B1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#B2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#B3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Basilica_S._Vitale"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bibliotheque_Louis_Medard"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bodleian_Library"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Body1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Body10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Body2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Body3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Body4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Body5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Body6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Body7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Body8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Body9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cappella_degli_Scrovegni"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Duomo_di_Siena"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#F1_X"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#F1_Y"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Frag1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Frag10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Frag2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Frag3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Frag4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Frag5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Frag6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Frag7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Frag8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Frag9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IWorkF1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IWorkMi1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IWorkMi2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IWorkMo1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IWorkP1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#In_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#In_10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#In_11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#In_12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#In_13"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#In_14"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#In_15"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#In_16"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#In_17"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#In_18"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#In_19"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#In_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#In_20"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#In_21"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#In_22"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#In_23"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#In_24"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#In_25"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#In_26"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#In_27"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#In_28"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#In_29"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#In_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#In_30"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#In_31"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#In_32"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#In_33"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#In_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#In_5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#In_6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#In_7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#In_8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#In_9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LWork1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LWork2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LWork3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LWork4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lunel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Man1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Man2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mo1_Y"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Oxford"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#P1_X"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#P1_Y"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pa_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pa_10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pa_11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pa_12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pa_13"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pa_14"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pa_15"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pa_16"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pa_17"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pa_18"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pa_19"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pa_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pa_20"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pa_21"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pa_22"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pa_23"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pa_24"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pa_25"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pa_26"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pa_27"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pa_28"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pa_29"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pa_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pa_30"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pa_31"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pa_32"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pa_33"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pa_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pa_5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pa_6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pa_7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pa_8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pa_9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Padova"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pu_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pu_10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pu_11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pu_12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pu_13"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pu_14"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pu_15"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pu_16"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pu_17"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pu_18"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pu_19"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pu_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pu_20"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pu_21"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pu_22"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pu_23"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pu_24"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pu_25"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pu_26"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pu_27"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pu_28"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pu_29"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pu_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pu_30"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pu_31"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pu_32"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pu_33"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pu_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pu_5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pu_6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pu_7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pu_8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pu_9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ravenna"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Scholar_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Scholar_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Scholar_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Scholar_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Scholar_5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sel1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sel10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sel2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sel3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sel4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sel5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sel6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sel7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sel8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sel9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Siena"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TS1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TS2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TS3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bizantino"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#calcestruzzo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ciottoli"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#diretto"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#doppio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#epica_latina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#indiretto"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#legno"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lirica_provenzale"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#metre"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mista"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nuovo_testamento"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#olio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#oro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#storiografia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tempera"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#20_V_in"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#28_XXIII_pa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#39_V_in"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#4_IX_pu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#4_V_in"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#46_V_in"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#53_IV_in"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#58_V_in"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#61_V_in"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#70_XIX_in"/>
+    </Declaration>
+    <SubClassOf>
+        <Class abbreviatedIRI="cidoc:E29_DesignOrProcedure"/>
+        <Class abbreviatedIRI="cidoc:E1_CRM_Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="cidoc:E52_TimeSpan"/>
+        <Class abbreviatedIRI="cidoc:E1_CRM_Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="cidoc:E53_Place"/>
+        <Class abbreviatedIRI="cidoc:E1_CRM_Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="cidoc:E54_Dimension"/>
+        <Class abbreviatedIRI="cidoc:E1_CRM_Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="cidoc:E57_Material"/>
+        <Class abbreviatedIRI="cidoc:E1_CRM_Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="cidoc:E58_MeasurementUnit"/>
+        <Class abbreviatedIRI="cidoc:E1_CRM_Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Annotation"/>
+        <Class abbreviatedIRI="oa:Annotation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Antiquary"/>
+        <Class abbreviatedIRI="foaf:Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Author"/>
+        <Class abbreviatedIRI="foaf:Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cantica"/>
+        <Class abbreviatedIRI="fabio:Book"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Canto"/>
+        <Class abbreviatedIRI="doco:Chapter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E55_Type"/>
+        <Class abbreviatedIRI="cidoc:E1_CRM_Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fragment"/>
+        <Class abbreviatedIRI="efrbroo:F23_ExpressionFragment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fresco"/>
+        <Class IRI="#IconographicWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IconographicWork"/>
+        <Class IRI="#Work"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Length"/>
+        <Class abbreviatedIRI="cidoc:E54_Dimension"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LiteraryWork"/>
+        <Class IRI="#Work"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Manuscript"/>
+        <Class IRI="#LiteraryWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Material"/>
+        <Class abbreviatedIRI="cidoc:E57_Material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeasurementUnit"/>
+        <Class abbreviatedIRI="cidoc:E58_MeasurementUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Miniature"/>
+        <Class IRI="#IconographicWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mosaic"/>
+        <Class IRI="#IconographicWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MosaicTechnique"/>
+        <Class IRI="#Technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MosaicType"/>
+        <Class IRI="#E55_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PaintingTechnique"/>
+        <Class IRI="#Technique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PanelPainting"/>
+        <Class IRI="#IconographicWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Region"/>
+        <Class abbreviatedIRI="cidoc:E53_Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scholar"/>
+        <Class abbreviatedIRI="foaf:Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Site"/>
+        <Class abbreviatedIRI="cidoc:E53_Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Technique"/>
+        <Class abbreviatedIRI="cidoc:E29_DesignOrProcedure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TextualBody"/>
+        <Class abbreviatedIRI="oa:TextualBody"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TimeSpan"/>
+        <Class abbreviatedIRI="cidoc:E52_TimeSpan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Verso"/>
+        <Class abbreviatedIRI="doco:Line"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Work"/>
+        <Class abbreviatedIRI="efrbroo:F1_Work"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="oa:TextPositionSelector"/>
+        <Class abbreviatedIRI="oa:Selector"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Cantica"/>
+        <Class IRI="#Canto"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Cantica"/>
+        <Class IRI="#Verso"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Canto"/>
+        <Class IRI="#Verso"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fresco"/>
+        <Class IRI="#Miniature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fresco"/>
+        <Class IRI="#Mosaic"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fresco"/>
+        <Class IRI="#PanelPainting"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Miniature"/>
+        <Class IRI="#Mosaic"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Miniature"/>
+        <Class IRI="#PanelPainting"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Mosaic"/>
+        <Class IRI="#PanelPainting"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Region"/>
+        <Class IRI="#Site"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Annotation"/>
+        <NamedIndividual IRI="#Ann1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Annotation"/>
+        <NamedIndividual IRI="#Ann10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Annotation"/>
+        <NamedIndividual IRI="#Ann2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Annotation"/>
+        <NamedIndividual IRI="#Ann3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Annotation"/>
+        <NamedIndividual IRI="#Ann4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Annotation"/>
+        <NamedIndividual IRI="#Ann5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Annotation"/>
+        <NamedIndividual IRI="#Ann6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Annotation"/>
+        <NamedIndividual IRI="#Ann7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Annotation"/>
+        <NamedIndividual IRI="#Ann8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Annotation"/>
+        <NamedIndividual IRI="#Ann9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Antiquary"/>
+        <NamedIndividual IRI="#Ant1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Auth1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Auth2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Auth3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Auth4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Auth5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Auth6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cantica"/>
+        <NamedIndividual IRI="#B1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cantica"/>
+        <NamedIndividual IRI="#B2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cantica"/>
+        <NamedIndividual IRI="#B3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Site"/>
+        <NamedIndividual IRI="#Basilica_S._Vitale"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Site"/>
+        <NamedIndividual IRI="#Bibliotheque_Louis_Medard"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Site"/>
+        <NamedIndividual IRI="#Bodleian_Library"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TextualBody"/>
+        <NamedIndividual IRI="#Body1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TextualBody"/>
+        <NamedIndividual IRI="#Body10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TextualBody"/>
+        <NamedIndividual IRI="#Body2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TextualBody"/>
+        <NamedIndividual IRI="#Body3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TextualBody"/>
+        <NamedIndividual IRI="#Body4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TextualBody"/>
+        <NamedIndividual IRI="#Body5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TextualBody"/>
+        <NamedIndividual IRI="#Body6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TextualBody"/>
+        <NamedIndividual IRI="#Body7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TextualBody"/>
+        <NamedIndividual IRI="#Body8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TextualBody"/>
+        <NamedIndividual IRI="#Body9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Site"/>
+        <NamedIndividual IRI="#Cappella_degli_Scrovegni"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Site"/>
+        <NamedIndividual IRI="#Duomo_di_Siena"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Length"/>
+        <NamedIndividual IRI="#F1_X"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Length"/>
+        <NamedIndividual IRI="#F1_Y"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fragment"/>
+        <NamedIndividual IRI="#Frag1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fragment"/>
+        <NamedIndividual IRI="#Frag10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fragment"/>
+        <NamedIndividual IRI="#Frag2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fragment"/>
+        <NamedIndividual IRI="#Frag3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fragment"/>
+        <NamedIndividual IRI="#Frag4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fragment"/>
+        <NamedIndividual IRI="#Frag5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fragment"/>
+        <NamedIndividual IRI="#Frag6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fragment"/>
+        <NamedIndividual IRI="#Frag7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fragment"/>
+        <NamedIndividual IRI="#Frag8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fragment"/>
+        <NamedIndividual IRI="#Frag9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fresco"/>
+        <NamedIndividual IRI="#IWorkF1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Miniature"/>
+        <NamedIndividual IRI="#IWorkMi1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Miniature"/>
+        <NamedIndividual IRI="#IWorkMi2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mosaic"/>
+        <NamedIndividual IRI="#IWorkMo1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PanelPainting"/>
+        <NamedIndividual IRI="#IWorkP1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#In_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#In_10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#In_11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#In_12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#In_13"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#In_14"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#In_15"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#In_16"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#In_17"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#In_18"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#In_19"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#In_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#In_20"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#In_21"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#In_22"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#In_23"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#In_24"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#In_25"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#In_26"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#In_27"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#In_28"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#In_29"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#In_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#In_30"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#In_31"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#In_32"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#In_33"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#In_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#In_5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#In_6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#In_7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#In_8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#In_9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LiteraryWork"/>
+        <NamedIndividual IRI="#LWork1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LiteraryWork"/>
+        <NamedIndividual IRI="#LWork2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LiteraryWork"/>
+        <NamedIndividual IRI="#LWork3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LiteraryWork"/>
+        <NamedIndividual IRI="#LWork4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Lunel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Manuscript"/>
+        <NamedIndividual IRI="#Man1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Manuscript"/>
+        <NamedIndividual IRI="#Man2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Length"/>
+        <NamedIndividual IRI="#Mo1_Y"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Oxford"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Length"/>
+        <NamedIndividual IRI="#P1_X"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Length"/>
+        <NamedIndividual IRI="#P1_Y"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pa_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pa_10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pa_11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pa_12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pa_13"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pa_14"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pa_15"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pa_16"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pa_17"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pa_18"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pa_19"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pa_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pa_20"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pa_21"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pa_22"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pa_23"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pa_24"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pa_25"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pa_26"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pa_27"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pa_28"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pa_29"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pa_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pa_30"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pa_31"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pa_32"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pa_33"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pa_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pa_5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pa_6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pa_7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pa_8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pa_9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Padova"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pu_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pu_10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pu_11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pu_12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pu_13"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pu_14"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pu_15"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pu_16"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pu_17"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pu_18"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pu_19"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pu_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pu_20"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pu_21"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pu_22"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pu_23"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pu_24"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pu_25"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pu_26"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pu_27"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pu_28"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pu_29"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pu_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pu_30"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pu_31"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pu_32"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pu_33"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pu_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pu_5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pu_6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pu_7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pu_8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Canto"/>
+        <NamedIndividual IRI="#Pu_9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Ravenna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Scholar"/>
+        <NamedIndividual IRI="#Scholar_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Scholar"/>
+        <NamedIndividual IRI="#Scholar_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Scholar"/>
+        <NamedIndividual IRI="#Scholar_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Scholar"/>
+        <NamedIndividual IRI="#Scholar_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Scholar"/>
+        <NamedIndividual IRI="#Scholar_5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="oa:TextPositionSelector"/>
+        <NamedIndividual IRI="#Sel1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="oa:TextPositionSelector"/>
+        <NamedIndividual IRI="#Sel10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="oa:TextPositionSelector"/>
+        <NamedIndividual IRI="#Sel2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="oa:TextPositionSelector"/>
+        <NamedIndividual IRI="#Sel3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="oa:TextPositionSelector"/>
+        <NamedIndividual IRI="#Sel4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="oa:TextPositionSelector"/>
+        <NamedIndividual IRI="#Sel5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="oa:TextPositionSelector"/>
+        <NamedIndividual IRI="#Sel6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="oa:TextPositionSelector"/>
+        <NamedIndividual IRI="#Sel7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="oa:TextPositionSelector"/>
+        <NamedIndividual IRI="#Sel8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="oa:TextPositionSelector"/>
+        <NamedIndividual IRI="#Sel9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Siena"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TimeSpan"/>
+        <NamedIndividual IRI="#TS1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TimeSpan"/>
+        <NamedIndividual IRI="#TS2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TimeSpan"/>
+        <NamedIndividual IRI="#TS3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MosaicType"/>
+        <NamedIndividual IRI="#bizantino"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Material"/>
+        <NamedIndividual IRI="#calcestruzzo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Material"/>
+        <NamedIndividual IRI="#ciottoli"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MosaicTechnique"/>
+        <NamedIndividual IRI="#diretto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MosaicTechnique"/>
+        <NamedIndividual IRI="#doppio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="skos:Concept"/>
+        <NamedIndividual IRI="#epica_latina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MosaicTechnique"/>
+        <NamedIndividual IRI="#indiretto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Material"/>
+        <NamedIndividual IRI="#legno"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="skos:Concept"/>
+        <NamedIndividual IRI="#lirica_provenzale"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MeasurementUnit"/>
+        <NamedIndividual IRI="#metre"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PaintingTechnique"/>
+        <NamedIndividual IRI="#mista"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="skos:Concept"/>
+        <NamedIndividual IRI="#nuovo_testamento"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PaintingTechnique"/>
+        <NamedIndividual IRI="#olio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Material"/>
+        <NamedIndividual IRI="#oro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="skos:Concept"/>
+        <NamedIndividual IRI="#storiografia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PaintingTechnique"/>
+        <NamedIndividual IRI="#tempera"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Verso"/>
+        <NamedIndividual IRI="#20_V_in"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Verso"/>
+        <NamedIndividual IRI="#28_XXIII_pa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Verso"/>
+        <NamedIndividual IRI="#39_V_in"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Verso"/>
+        <NamedIndividual IRI="#4_IX_pu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Verso"/>
+        <NamedIndividual IRI="#4_V_in"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Verso"/>
+        <NamedIndividual IRI="#46_V_in"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Verso"/>
+        <NamedIndividual IRI="#53_IV_in"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Verso"/>
+        <NamedIndividual IRI="#58_V_in"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Verso"/>
+        <NamedIndividual IRI="#61_V_in"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Verso"/>
+        <NamedIndividual IRI="#70_XIX_in"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contributor"/>
+        <NamedIndividual IRI="#Ann1"/>
+        <NamedIndividual IRI="#Scholar_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBody"/>
+        <NamedIndividual IRI="#Ann1"/>
+        <NamedIndividual IRI="#Body1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTarget"/>
+        <NamedIndividual IRI="#Ann1"/>
+        <NamedIndividual IRI="#Frag1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contributor"/>
+        <NamedIndividual IRI="#Ann10"/>
+        <NamedIndividual IRI="#Scholar_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBody"/>
+        <NamedIndividual IRI="#Ann10"/>
+        <NamedIndividual IRI="#Body10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTarget"/>
+        <NamedIndividual IRI="#Ann10"/>
+        <NamedIndividual IRI="#Frag10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contributor"/>
+        <NamedIndividual IRI="#Ann2"/>
+        <NamedIndividual IRI="#Scholar_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBody"/>
+        <NamedIndividual IRI="#Ann2"/>
+        <NamedIndividual IRI="#Body2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTarget"/>
+        <NamedIndividual IRI="#Ann2"/>
+        <NamedIndividual IRI="#Frag2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contributor"/>
+        <NamedIndividual IRI="#Ann3"/>
+        <NamedIndividual IRI="#Scholar_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBody"/>
+        <NamedIndividual IRI="#Ann3"/>
+        <NamedIndividual IRI="#Body3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTarget"/>
+        <NamedIndividual IRI="#Ann3"/>
+        <NamedIndividual IRI="#Frag3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contributor"/>
+        <NamedIndividual IRI="#Ann4"/>
+        <NamedIndividual IRI="#Scholar_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBody"/>
+        <NamedIndividual IRI="#Ann4"/>
+        <NamedIndividual IRI="#Body4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTarget"/>
+        <NamedIndividual IRI="#Ann4"/>
+        <NamedIndividual IRI="#Frag4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contributor"/>
+        <NamedIndividual IRI="#Ann5"/>
+        <NamedIndividual IRI="#Scholar_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBody"/>
+        <NamedIndividual IRI="#Ann5"/>
+        <NamedIndividual IRI="#Body5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTarget"/>
+        <NamedIndividual IRI="#Ann5"/>
+        <NamedIndividual IRI="#Frag5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contributor"/>
+        <NamedIndividual IRI="#Ann6"/>
+        <NamedIndividual IRI="#Scholar_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBody"/>
+        <NamedIndividual IRI="#Ann6"/>
+        <NamedIndividual IRI="#Body6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTarget"/>
+        <NamedIndividual IRI="#Ann6"/>
+        <NamedIndividual IRI="#Frag6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contributor"/>
+        <NamedIndividual IRI="#Ann7"/>
+        <NamedIndividual IRI="#Scholar_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBody"/>
+        <NamedIndividual IRI="#Ann7"/>
+        <NamedIndividual IRI="#Body7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTarget"/>
+        <NamedIndividual IRI="#Ann7"/>
+        <NamedIndividual IRI="#Frag7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contributor"/>
+        <NamedIndividual IRI="#Ann8"/>
+        <NamedIndividual IRI="#Scholar_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBody"/>
+        <NamedIndividual IRI="#Ann8"/>
+        <NamedIndividual IRI="#Body8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTarget"/>
+        <NamedIndividual IRI="#Ann8"/>
+        <NamedIndividual IRI="#Frag8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contributor"/>
+        <NamedIndividual IRI="#Ann9"/>
+        <NamedIndividual IRI="#Scholar_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBody"/>
+        <NamedIndividual IRI="#Ann9"/>
+        <NamedIndividual IRI="#Body9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTarget"/>
+        <NamedIndividual IRI="#Ann9"/>
+        <NamedIndividual IRI="#Frag9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLocation"/>
+        <NamedIndividual IRI="#Basilica_S._Vitale"/>
+        <NamedIndividual IRI="#Ravenna"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLocation"/>
+        <NamedIndividual IRI="#Bibliotheque_Louis_Medard"/>
+        <NamedIndividual IRI="#Lunel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLocation"/>
+        <NamedIndividual IRI="#Bodleian_Library"/>
+        <NamedIndividual IRI="#Oxford"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLocation"/>
+        <NamedIndividual IRI="#Cappella_degli_Scrovegni"/>
+        <NamedIndividual IRI="#Padova"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLocation"/>
+        <NamedIndividual IRI="#Duomo_di_Siena"/>
+        <NamedIndividual IRI="#Siena"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cidoc:P91_hasUnit"/>
+        <NamedIndividual IRI="#F1_X"/>
+        <NamedIndividual IRI="#metre"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cidoc:P91_hasUnit"/>
+        <NamedIndividual IRI="#F1_Y"/>
+        <NamedIndividual IRI="#metre"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#citeAsLiterarySource"/>
+        <NamedIndividual IRI="#Frag1"/>
+        <NamedIndividual IRI="#LWork2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSelector"/>
+        <NamedIndividual IRI="#Frag1"/>
+        <NamedIndividual IRI="#Sel1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#startVerse"/>
+        <NamedIndividual IRI="#Frag1"/>
+        <NamedIndividual IRI="#4_V_in"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#citeAsIconographicSource"/>
+        <NamedIndividual IRI="#Frag10"/>
+        <NamedIndividual IRI="#IWorkF1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSelector"/>
+        <NamedIndividual IRI="#Frag10"/>
+        <NamedIndividual IRI="#Sel10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#startVerse"/>
+        <NamedIndividual IRI="#Frag10"/>
+        <NamedIndividual IRI="#28_XXIII_pa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#citeAsLiterarySource"/>
+        <NamedIndividual IRI="#Frag2"/>
+        <NamedIndividual IRI="#LWork4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSelector"/>
+        <NamedIndividual IRI="#Frag2"/>
+        <NamedIndividual IRI="#Sel2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#startVerse"/>
+        <NamedIndividual IRI="#Frag2"/>
+        <NamedIndividual IRI="#20_V_in"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#citeAsLiterarySource"/>
+        <NamedIndividual IRI="#Frag3"/>
+        <NamedIndividual IRI="#LWork1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSelector"/>
+        <NamedIndividual IRI="#Frag3"/>
+        <NamedIndividual IRI="#Sel3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#startVerse"/>
+        <NamedIndividual IRI="#Frag3"/>
+        <NamedIndividual IRI="#39_V_in"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#citeAsLiterarySource"/>
+        <NamedIndividual IRI="#Frag4"/>
+        <NamedIndividual IRI="#LWork2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSelector"/>
+        <NamedIndividual IRI="#Frag4"/>
+        <NamedIndividual IRI="#Sel4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#startVerse"/>
+        <NamedIndividual IRI="#Frag4"/>
+        <NamedIndividual IRI="#46_V_in"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#citeAsLiterarySource"/>
+        <NamedIndividual IRI="#Frag5"/>
+        <NamedIndividual IRI="#LWork3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSelector"/>
+        <NamedIndividual IRI="#Frag5"/>
+        <NamedIndividual IRI="#Sel5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#startVerse"/>
+        <NamedIndividual IRI="#Frag5"/>
+        <NamedIndividual IRI="#58_V_in"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#citeAsLiterarySource"/>
+        <NamedIndividual IRI="#Frag6"/>
+        <NamedIndividual IRI="#LWork2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSelector"/>
+        <NamedIndividual IRI="#Frag6"/>
+        <NamedIndividual IRI="#Sel6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#startVerse"/>
+        <NamedIndividual IRI="#Frag6"/>
+        <NamedIndividual IRI="#61_V_in"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#citeAsIconographicSource"/>
+        <NamedIndividual IRI="#Frag7"/>
+        <NamedIndividual IRI="#IWorkMo1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSelector"/>
+        <NamedIndividual IRI="#Frag7"/>
+        <NamedIndividual IRI="#Sel7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#startVerse"/>
+        <NamedIndividual IRI="#Frag7"/>
+        <NamedIndividual IRI="#4_IX_pu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#citeAsIconographicSource"/>
+        <NamedIndividual IRI="#Frag8"/>
+        <NamedIndividual IRI="#IWorkMi1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#citeAsIconographicSource"/>
+        <NamedIndividual IRI="#Frag8"/>
+        <NamedIndividual IRI="#IWorkMi2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSelector"/>
+        <NamedIndividual IRI="#Frag8"/>
+        <NamedIndividual IRI="#Sel8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#startVerse"/>
+        <NamedIndividual IRI="#Frag8"/>
+        <NamedIndividual IRI="#70_XIX_in"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#citeAsIconographicSource"/>
+        <NamedIndividual IRI="#Frag9"/>
+        <NamedIndividual IRI="#IWorkP1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSelector"/>
+        <NamedIndividual IRI="#Frag9"/>
+        <NamedIndividual IRI="#Sel9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#startVerse"/>
+        <NamedIndividual IRI="#Frag9"/>
+        <NamedIndividual IRI="#53_IV_in"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#creator"/>
+        <NamedIndividual IRI="#IWorkF1"/>
+        <NamedIndividual IRI="#Auth6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDimX"/>
+        <NamedIndividual IRI="#IWorkF1"/>
+        <NamedIndividual IRI="#F1_X"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDimY"/>
+        <NamedIndividual IRI="#IWorkF1"/>
+        <NamedIndividual IRI="#F1_Y"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTimeSpan"/>
+        <NamedIndividual IRI="#IWorkF1"/>
+        <NamedIndividual IRI="#TS1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inSite"/>
+        <NamedIndividual IRI="#IWorkF1"/>
+        <NamedIndividual IRI="#Cappella_degli_Scrovegni"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inSite"/>
+        <NamedIndividual IRI="#IWorkMi1"/>
+        <NamedIndividual IRI="#Bibliotheque_Louis_Medard"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#IWorkMi1"/>
+        <NamedIndividual IRI="#Man1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inSite"/>
+        <NamedIndividual IRI="#IWorkMi2"/>
+        <NamedIndividual IRI="#Bodleian_Library"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#IWorkMi2"/>
+        <NamedIndividual IRI="#Man2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDimY"/>
+        <NamedIndividual IRI="#IWorkMo1"/>
+        <NamedIndividual IRI="#Mo1_Y"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTimeSpan"/>
+        <NamedIndividual IRI="#IWorkMo1"/>
+        <NamedIndividual IRI="#TS2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inSite"/>
+        <NamedIndividual IRI="#IWorkMo1"/>
+        <NamedIndividual IRI="#Basilica_S._Vitale"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#typeOfMosaic"/>
+        <NamedIndividual IRI="#IWorkMo1"/>
+        <NamedIndividual IRI="#bizantino"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#typeOfSubstrateMosaic"/>
+        <NamedIndividual IRI="#IWorkMo1"/>
+        <NamedIndividual IRI="#calcestruzzo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#typeOfTesserae"/>
+        <NamedIndividual IRI="#IWorkMo1"/>
+        <NamedIndividual IRI="#ciottoli"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#typeOfTesserae"/>
+        <NamedIndividual IRI="#IWorkMo1"/>
+        <NamedIndividual IRI="#oro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedTechniqueMosaic"/>
+        <NamedIndividual IRI="#IWorkMo1"/>
+        <NamedIndividual IRI="#diretto"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#creator"/>
+        <NamedIndividual IRI="#IWorkP1"/>
+        <NamedIndividual IRI="#Auth5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDimX"/>
+        <NamedIndividual IRI="#IWorkP1"/>
+        <NamedIndividual IRI="#P1_X"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDimY"/>
+        <NamedIndividual IRI="#IWorkP1"/>
+        <NamedIndividual IRI="#P1_Y"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTimeSpan"/>
+        <NamedIndividual IRI="#IWorkP1"/>
+        <NamedIndividual IRI="#TS3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inSite"/>
+        <NamedIndividual IRI="#IWorkP1"/>
+        <NamedIndividual IRI="#Duomo_di_Siena"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#typeOfSubstratePainting"/>
+        <NamedIndividual IRI="#IWorkP1"/>
+        <NamedIndividual IRI="#legno"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedTechniquePainting"/>
+        <NamedIndividual IRI="#IWorkP1"/>
+        <NamedIndividual IRI="#olio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#In_1"/>
+        <NamedIndividual IRI="#B1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#In_10"/>
+        <NamedIndividual IRI="#B1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#In_11"/>
+        <NamedIndividual IRI="#B1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#In_12"/>
+        <NamedIndividual IRI="#B1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#In_13"/>
+        <NamedIndividual IRI="#B1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#In_14"/>
+        <NamedIndividual IRI="#B1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#In_15"/>
+        <NamedIndividual IRI="#B1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#In_16"/>
+        <NamedIndividual IRI="#B1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#In_17"/>
+        <NamedIndividual IRI="#B1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#In_18"/>
+        <NamedIndividual IRI="#B1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#In_19"/>
+        <NamedIndividual IRI="#B1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#In_2"/>
+        <NamedIndividual IRI="#B1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#In_20"/>
+        <NamedIndividual IRI="#B1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#In_21"/>
+        <NamedIndividual IRI="#B1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#In_22"/>
+        <NamedIndividual IRI="#B1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#In_23"/>
+        <NamedIndividual IRI="#B1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#In_24"/>
+        <NamedIndividual IRI="#B1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#In_25"/>
+        <NamedIndividual IRI="#B1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#In_26"/>
+        <NamedIndividual IRI="#B1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#In_27"/>
+        <NamedIndividual IRI="#B1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#In_28"/>
+        <NamedIndividual IRI="#B1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#In_29"/>
+        <NamedIndividual IRI="#B1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#In_3"/>
+        <NamedIndividual IRI="#B1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#In_30"/>
+        <NamedIndividual IRI="#B1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#In_31"/>
+        <NamedIndividual IRI="#B1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#In_32"/>
+        <NamedIndividual IRI="#B1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#In_33"/>
+        <NamedIndividual IRI="#B1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#In_4"/>
+        <NamedIndividual IRI="#B1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#In_5"/>
+        <NamedIndividual IRI="#B1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#In_6"/>
+        <NamedIndividual IRI="#B1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#In_7"/>
+        <NamedIndividual IRI="#B1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#In_8"/>
+        <NamedIndividual IRI="#B1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#In_9"/>
+        <NamedIndividual IRI="#B1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#creator"/>
+        <NamedIndividual IRI="#LWork1"/>
+        <NamedIndividual IRI="#Auth1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#subject"/>
+        <NamedIndividual IRI="#LWork1"/>
+        <NamedIndividual IRI="#lirica_provenzale"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#creator"/>
+        <NamedIndividual IRI="#LWork2"/>
+        <NamedIndividual IRI="#Auth4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#subject"/>
+        <NamedIndividual IRI="#LWork2"/>
+        <NamedIndividual IRI="#storiografia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#creator"/>
+        <NamedIndividual IRI="#LWork3"/>
+        <NamedIndividual IRI="#Auth4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#subject"/>
+        <NamedIndividual IRI="#LWork3"/>
+        <NamedIndividual IRI="#epica_latina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#creator"/>
+        <NamedIndividual IRI="#LWork4"/>
+        <NamedIndividual IRI="#Auth3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#subject"/>
+        <NamedIndividual IRI="#LWork4"/>
+        <NamedIndividual IRI="#nuovo_testamento"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#acquiredBy"/>
+        <NamedIndividual IRI="#Man2"/>
+        <NamedIndividual IRI="#Ant1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cidoc:P91_hasUnit"/>
+        <NamedIndividual IRI="#Mo1_Y"/>
+        <NamedIndividual IRI="#metre"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cidoc:P91_hasUnit"/>
+        <NamedIndividual IRI="#P1_X"/>
+        <NamedIndividual IRI="#metre"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cidoc:P91_hasUnit"/>
+        <NamedIndividual IRI="#P1_Y"/>
+        <NamedIndividual IRI="#metre"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pa_1"/>
+        <NamedIndividual IRI="#B3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pa_10"/>
+        <NamedIndividual IRI="#B3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pa_11"/>
+        <NamedIndividual IRI="#B3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pa_12"/>
+        <NamedIndividual IRI="#B3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pa_13"/>
+        <NamedIndividual IRI="#B3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pa_14"/>
+        <NamedIndividual IRI="#B3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pa_15"/>
+        <NamedIndividual IRI="#B3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pa_16"/>
+        <NamedIndividual IRI="#B3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pa_17"/>
+        <NamedIndividual IRI="#B3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pa_18"/>
+        <NamedIndividual IRI="#B3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pa_19"/>
+        <NamedIndividual IRI="#B3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pa_2"/>
+        <NamedIndividual IRI="#B3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pa_20"/>
+        <NamedIndividual IRI="#B3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pa_21"/>
+        <NamedIndividual IRI="#B3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pa_22"/>
+        <NamedIndividual IRI="#B3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pa_23"/>
+        <NamedIndividual IRI="#B3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pa_24"/>
+        <NamedIndividual IRI="#B3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pa_25"/>
+        <NamedIndividual IRI="#B3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pa_26"/>
+        <NamedIndividual IRI="#B3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pa_27"/>
+        <NamedIndividual IRI="#B3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pa_28"/>
+        <NamedIndividual IRI="#B3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pa_29"/>
+        <NamedIndividual IRI="#B3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pa_3"/>
+        <NamedIndividual IRI="#B3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pa_30"/>
+        <NamedIndividual IRI="#B3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pa_31"/>
+        <NamedIndividual IRI="#B3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pa_32"/>
+        <NamedIndividual IRI="#B3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pa_33"/>
+        <NamedIndividual IRI="#B3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pa_4"/>
+        <NamedIndividual IRI="#B3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pa_5"/>
+        <NamedIndividual IRI="#B3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pa_6"/>
+        <NamedIndividual IRI="#B3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pa_7"/>
+        <NamedIndividual IRI="#B3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pa_8"/>
+        <NamedIndividual IRI="#B3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pa_9"/>
+        <NamedIndividual IRI="#B3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pu_1"/>
+        <NamedIndividual IRI="#B2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pu_10"/>
+        <NamedIndividual IRI="#B2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pu_11"/>
+        <NamedIndividual IRI="#B2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pu_12"/>
+        <NamedIndividual IRI="#B2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pu_13"/>
+        <NamedIndividual IRI="#B2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pu_14"/>
+        <NamedIndividual IRI="#B2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pu_15"/>
+        <NamedIndividual IRI="#B2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pu_16"/>
+        <NamedIndividual IRI="#B2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pu_17"/>
+        <NamedIndividual IRI="#B2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pu_18"/>
+        <NamedIndividual IRI="#B2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pu_19"/>
+        <NamedIndividual IRI="#B2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pu_2"/>
+        <NamedIndividual IRI="#B2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pu_20"/>
+        <NamedIndividual IRI="#B2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pu_21"/>
+        <NamedIndividual IRI="#B2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pu_22"/>
+        <NamedIndividual IRI="#B2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pu_23"/>
+        <NamedIndividual IRI="#B2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pu_24"/>
+        <NamedIndividual IRI="#B2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pu_25"/>
+        <NamedIndividual IRI="#B2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pu_26"/>
+        <NamedIndividual IRI="#B2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pu_27"/>
+        <NamedIndividual IRI="#B2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pu_28"/>
+        <NamedIndividual IRI="#B2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pu_29"/>
+        <NamedIndividual IRI="#B2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pu_3"/>
+        <NamedIndividual IRI="#B2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pu_30"/>
+        <NamedIndividual IRI="#B2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pu_31"/>
+        <NamedIndividual IRI="#B2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pu_32"/>
+        <NamedIndividual IRI="#B2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pu_33"/>
+        <NamedIndividual IRI="#B2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pu_4"/>
+        <NamedIndividual IRI="#B2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pu_5"/>
+        <NamedIndividual IRI="#B2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pu_6"/>
+        <NamedIndividual IRI="#B2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pu_7"/>
+        <NamedIndividual IRI="#B2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pu_8"/>
+        <NamedIndividual IRI="#B2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <NamedIndividual IRI="#Pu_9"/>
+        <NamedIndividual IRI="#B2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isVerseOf"/>
+        <NamedIndividual IRI="#20_V_in"/>
+        <NamedIndividual IRI="#In_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isVerseOf"/>
+        <NamedIndividual IRI="#28_XXIII_pa"/>
+        <NamedIndividual IRI="#Pa_23"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isVerseOf"/>
+        <NamedIndividual IRI="#39_V_in"/>
+        <NamedIndividual IRI="#In_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isVerseOf"/>
+        <NamedIndividual IRI="#4_IX_pu"/>
+        <NamedIndividual IRI="#Pu_9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isVerseOf"/>
+        <NamedIndividual IRI="#4_V_in"/>
+        <NamedIndividual IRI="#In_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isVerseOf"/>
+        <NamedIndividual IRI="#46_V_in"/>
+        <NamedIndividual IRI="#In_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isVerseOf"/>
+        <NamedIndividual IRI="#53_IV_in"/>
+        <NamedIndividual IRI="#In_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isVerseOf"/>
+        <NamedIndividual IRI="#58_V_in"/>
+        <NamedIndividual IRI="#In_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isVerseOf"/>
+        <NamedIndividual IRI="#61_V_in"/>
+        <NamedIndividual IRI="#In_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isVerseOf"/>
+        <NamedIndividual IRI="#70_XIX_in"/>
+        <NamedIndividual IRI="#In_19"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Ant1"/>
+        <Literal>Francis Douce</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#wikiPageID"/>
+        <NamedIndividual IRI="#Ant1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7034266</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Auth1"/>
+        <Literal>Meo Abbracciavacca</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#wikiPageID"/>
+        <NamedIndividual IRI="#Auth1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">490095</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Auth2"/>
+        <Literal>Paolo Orosio</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#wikiPageID"/>
+        <NamedIndividual IRI="#Auth2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">68804</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Auth3"/>
+        <Literal>S. Matteo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#wikiPageID"/>
+        <NamedIndividual IRI="#Auth3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">111275</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Auth4"/>
+        <Literal>Virgilio</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#wikiPageID"/>
+        <NamedIndividual IRI="#Auth4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1813685</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Auth5"/>
+        <Literal>Duccio</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#wikiPageID"/>
+        <NamedIndividual IRI="#Auth5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">74807</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Auth6"/>
+        <Literal>Giotto di Bodone</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#wikiPageID"/>
+        <NamedIndividual IRI="#Auth6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2371408</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#bookTitle"/>
+        <NamedIndividual IRI="#B1"/>
+        <Literal>Inferno</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#bookTitle"/>
+        <NamedIndividual IRI="#B2"/>
+        <Literal>Purgatorio</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#bookTitle"/>
+        <NamedIndividual IRI="#B3"/>
+        <Literal>Paradiso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasContent"/>
+        <NamedIndividual IRI="#Body1"/>
+        <Literal>Dante segue Virgilio (cfr. Aen. VI 432-3: «quaesitor Minos urnam movet, ille silentum / consiliumque vocat vitasque et crimina discit»).</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#Body1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2016-10-15T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasContent"/>
+        <NamedIndividual IRI="#Body10"/>
+        <Literal>Nell’affresco di Giotto, in più, Cristo in salita – quasi in volo, con una resa magistrale del movimento verticale – è circondato da nuvole di angeli festanti. Consideriamo che sia dunque questo il modello figurativo del trionfo
+di Cristo che, congiuntamente alle influenze della letteratura mistica,
+ha ispirato la visione descritta nel canto XXIII.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#Body10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-07T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasContent"/>
+        <NamedIndividual IRI="#Body2"/>
+        <Literal>cfr. Matth. 7, 13: «spatiosa via est, quae ducit ad perditionem»</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#Body2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2016-10-15T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasContent"/>
+        <NamedIndividual IRI="#Body3"/>
+        <Literal>Un riscontro di questa espressione è stato indicato dal Contini in un verso di Meo AbbracciaVacca : &lt;&lt;e qual sommette a voglia operazione&gt;&gt;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#Body3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1981-09-01T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasContent"/>
+        <NamedIndividual IRI="#Body4"/>
+        <Literal>Anche questo raggruppamento risale a Virgilio, che nei «campi lugentes» pone appunto coloro «quos durus amor crudeli tabe peredit» ( Aen. VI 442).</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#Body4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2016-10-15T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasContent"/>
+        <NamedIndividual IRI="#Body5"/>
+        <Literal>Semiramide, regina degli Assiri, vissuta nel XIV secolo a.C. Le notizie di Dante dipendono dallo storico di Roma Paolo Orosio, discepolo di sant’Agostino, e fondamentale per la cultura storica dantesca.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#Body5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2016-10-15T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasContent"/>
+        <NamedIndividual IRI="#Body6"/>
+        <Literal>Didone venne meno alla memoria del suo primo marito, Sicheo, innamorandosi e sposando Enea, come Dante ben sapeva dal poema di Virgilio.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#Body6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1981-09-01T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasContent"/>
+        <NamedIndividual IRI="#Body7"/>
+        <Literal>il v. 4 («di gemme la sua fronte era lucente») non può non ricondurci
+alla mente il volto di Teodora effigiato nel mosaico absidale di S. Vitale</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#Body7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2008-03-05T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasContent"/>
+        <NamedIndividual IRI="#Body8"/>
+        <Literal>Se il riferimento ai figliuol de l’orsa si può da un lato spiegare con la presenza
+di un Orso tra i discendenti della famiglia Orsini, i cui figli, e in seguito
+i discendenti, vennero denominati filii Ursi, è anche vero che già nel
+commento del Torraca, a proposito degli orsatti, si ricorda la testimonianza
+del frate domenicano Francesco Pipino, cronista bolognese contemporaneo
+di Dante, il quale racconta di un «libello», nel quale papa Niccolò era raffigurato con un orso sulla mitra e due ai piedi, volti a guardarlo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#Body8"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2008-03-05T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasContent"/>
+        <NamedIndividual IRI="#Body9"/>
+        <Literal>La descrizione risponde pienamente alla figurazione del Triumphum Christi diffusa nel Trecento in area toscana che formalizza, appunto, i segni
+della vittoria di Cristo sulla morte  nella croce nimbica, nel bastone crociato e nella bandiera con croce rossa latina e sfondo bianco (o viceversa);</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#Body9"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-07T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#length"/>
+        <NamedIndividual IRI="#F1_X"/>
+        <Literal>1,85</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#length"/>
+        <NamedIndividual IRI="#F1_Y"/>
+        <Literal>2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#bodyChars"/>
+        <NamedIndividual IRI="#Frag1"/>
+        <Literal>Stavvi Minòs orribilmente, e ringhia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#bodyChars"/>
+        <NamedIndividual IRI="#Frag10"/>
+        <Literal>vid’io sopra migliaia di lucerne,
+un sol che tutte quante l’accendea</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#bodyChars"/>
+        <NamedIndividual IRI="#Frag2"/>
+        <Literal>l’ampiezza de l’intrare</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#bodyChars"/>
+        <NamedIndividual IRI="#Frag3"/>
+        <Literal>che la ragion sommettono al talento</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#bodyChars"/>
+        <NamedIndividual IRI="#Frag4"/>
+        <Literal>E come i gru van cantando</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#bodyChars"/>
+        <NamedIndividual IRI="#Frag5"/>
+        <Literal>Ell’ è Semiramìs</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#bodyChars"/>
+        <NamedIndividual IRI="#Frag6"/>
+        <Literal>L’altra è colei che s’ancise amorosa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#bodyChars"/>
+        <NamedIndividual IRI="#Frag7"/>
+        <Literal>di gemme la sua fronte era lucente</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#bodyChars"/>
+        <NamedIndividual IRI="#Frag8"/>
+        <Literal>figliuol de l’orsa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#bodyChars"/>
+        <NamedIndividual IRI="#Frag9"/>
+        <Literal>quando ci vidi venire un possente,
+con segno di vittoria coronato.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTitle"/>
+        <NamedIndividual IRI="#IWorkF1"/>
+        <Literal>Ascensione di Cristo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#IWorkMo1"/>
+        <Literal>Volto di Teodora (corona)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTitle"/>
+        <NamedIndividual IRI="#IWorkMo1"/>
+        <Literal>Teodora e il suo seguito</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTitle"/>
+        <NamedIndividual IRI="#IWorkP1"/>
+        <Literal>Discesa di Cristo al Limbo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#In_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#In_10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#In_11"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#In_12"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#In_13"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">13</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#In_14"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#In_15"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#In_16"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#In_17"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">17</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#In_18"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#In_19"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">19</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#In_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#In_20"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#In_21"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#In_22"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#In_23"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">23</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#In_24"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#In_25"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#In_26"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">26</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#In_27"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">27</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#In_28"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">28</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#In_29"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">29</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#In_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#In_30"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#In_31"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">31</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#In_32"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">32</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#In_33"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">33</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#In_4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#In_5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#In_6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#In_7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#In_8"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#In_9"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTitle"/>
+        <NamedIndividual IRI="#LWork1"/>
+        <Literal>Non volontà, ma omo fa ragione</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTitle"/>
+        <NamedIndividual IRI="#LWork2"/>
+        <Literal>Eneide</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTitle"/>
+        <NamedIndividual IRI="#LWork3"/>
+        <Literal>historiarum adversus paganos libri septem</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTitle"/>
+        <NamedIndividual IRI="#LWork4"/>
+        <Literal>Vangelo secondo Matteo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#length"/>
+        <NamedIndividual IRI="#Mo1_Y"/>
+        <Literal>5,4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#length"/>
+        <NamedIndividual IRI="#P1_X"/>
+        <Literal>8,53</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#length"/>
+        <NamedIndividual IRI="#P1_Y"/>
+        <Literal>3,98</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pa_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pa_10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pa_11"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pa_12"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pa_13"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">13</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pa_14"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pa_15"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pa_16"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pa_17"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">17</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pa_18"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pa_19"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">19</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pa_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pa_20"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pa_21"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pa_22"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pa_23"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">23</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pa_24"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pa_25"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pa_26"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">26</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pa_27"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">27</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pa_28"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">28</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pa_29"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">29</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pa_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pa_30"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pa_31"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">31</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pa_32"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">32</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pa_33"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">33</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pa_4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pa_5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pa_6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pa_7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pa_8"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pa_9"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pu_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pu_10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pu_11"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pu_12"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pu_13"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">13</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pu_14"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pu_15"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pu_16"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pu_17"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">17</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pu_18"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pu_19"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">19</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pu_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pu_20"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pu_21"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pu_22"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pu_23"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">23</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pu_24"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pu_25"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pu_26"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">26</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pu_27"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">27</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pu_28"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">28</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pu_29"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">29</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pu_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pu_30"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pu_31"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">31</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pu_32"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">32</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pu_33"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">33</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pu_4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pu_5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pu_6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pu_7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pu_8"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#chNumber"/>
+        <NamedIndividual IRI="#Pu_9"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Scholar_1"/>
+        <Literal>Anna Maria Chiavacci Leonardi</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#wikiPageID"/>
+        <NamedIndividual IRI="#Scholar_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8265026</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Scholar_2"/>
+        <Literal>Umberto Bosco</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#wikiPageID"/>
+        <NamedIndividual IRI="#Scholar_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2102558</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Scholar_3"/>
+        <Literal>Natalino Sapegno</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#wikiPageID"/>
+        <NamedIndividual IRI="#Scholar_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">653675</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Scholar_4"/>
+        <Literal>Alessandro Benucci</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Scholar_5"/>
+        <Literal>Laura Pasquini</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="oa:end"/>
+        <NamedIndividual IRI="#Sel1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">124</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="oa:start"/>
+        <NamedIndividual IRI="#Sel1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">112</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="oa:end"/>
+        <NamedIndividual IRI="#Sel10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1074</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="oa:start"/>
+        <NamedIndividual IRI="#Sel10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1002</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="oa:end"/>
+        <NamedIndividual IRI="#Sel2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">744</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="oa:start"/>
+        <NamedIndividual IRI="#Sel2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">719</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="oa:end"/>
+        <NamedIndividual IRI="#Sel3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1435</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="oa:start"/>
+        <NamedIndividual IRI="#Sel3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1400</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="oa:end"/>
+        <NamedIndividual IRI="#Sel4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1683</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="oa:start"/>
+        <NamedIndividual IRI="#Sel4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1658</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="oa:end"/>
+        <NamedIndividual IRI="#Sel5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2117</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="oa:start"/>
+        <NamedIndividual IRI="#Sel5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2102</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="oa:end"/>
+        <NamedIndividual IRI="#Sel6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2251</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="oa:start"/>
+        <NamedIndividual IRI="#Sel6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2215</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="oa:end"/>
+        <NamedIndividual IRI="#Sel7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">151</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="oa:start"/>
+        <NamedIndividual IRI="#Sel7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">108</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="oa:end"/>
+        <NamedIndividual IRI="#Sel8"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2740</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="oa:start"/>
+        <NamedIndividual IRI="#Sel8"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2703</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="oa:end"/>
+        <NamedIndividual IRI="#Sel9"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2021</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="oa:start"/>
+        <NamedIndividual IRI="#Sel9"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1952</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#endDate"/>
+        <NamedIndividual IRI="#TS1"/>
+        <Literal>1306</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#startDate"/>
+        <NamedIndividual IRI="#TS1"/>
+        <Literal>1304</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#endDate"/>
+        <NamedIndividual IRI="#TS2"/>
+        <Literal>547</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#startDate"/>
+        <NamedIndividual IRI="#TS2"/>
+        <Literal>520</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#startDate"/>
+        <NamedIndividual IRI="#TS3"/>
+        <Literal>1308</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#startDate"/>
+        <NamedIndividual IRI="#TS3"/>
+        <Literal>1311</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lineNum"/>
+        <NamedIndividual IRI="#20_V_in"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lineNum"/>
+        <NamedIndividual IRI="#28_XXIII_pa"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">28</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lineNum"/>
+        <NamedIndividual IRI="#39_V_in"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">39</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lineNum"/>
+        <NamedIndividual IRI="#4_IX_pu"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lineNum"/>
+        <NamedIndividual IRI="#4_V_in"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lineNum"/>
+        <NamedIndividual IRI="#46_V_in"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">46</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lineNum"/>
+        <NamedIndividual IRI="#53_IV_in"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">53</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lineNum"/>
+        <NamedIndividual IRI="#58_V_in"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">58</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lineNum"/>
+        <NamedIndividual IRI="#61_V_in"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">61</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lineNum"/>
+        <NamedIndividual IRI="#70_XIX_in"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">70</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#citeAsIconographicSource"/>
+        <ObjectProperty abbreviatedIRI="cito:cites"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#citeAsLiterarySource"/>
+        <ObjectProperty abbreviatedIRI="cito:cites"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#contains"/>
+        <ObjectProperty IRI="http://purl.org/spar/frbrhasPart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#contributor"/>
+        <ObjectProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#creator"/>
+        <ObjectProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#endVerse"/>
+        <ObjectProperty abbreviatedIRI="oa:hasSource"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBody"/>
+        <ObjectProperty abbreviatedIRI="oa:hasBody"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCanto"/>
+        <ObjectProperty IRI="http://purl.org/spar/frbrhasPart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasDimX"/>
+        <ObjectProperty IRI="#hasDim"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasDimY"/>
+        <ObjectProperty IRI="#hasDim"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasLocation"/>
+        <ObjectProperty abbreviatedIRI="cidoc:P89_fallsWithin"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSelector"/>
+        <ObjectProperty abbreviatedIRI="oa:hasSelector"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTarget"/>
+        <ObjectProperty abbreviatedIRI="oa:hasTarget"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTimeSpan"/>
+        <ObjectProperty abbreviatedIRI="cidoc:P4_hasTimeSpan"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasVerse"/>
+        <ObjectProperty IRI="http://purl.org/spar/frbrhasPart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#inCanticum"/>
+        <ObjectProperty IRI="http://purl.org/spar/frbrisPartOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#inRegion"/>
+        <ObjectProperty abbreviatedIRI="cidoc:P54_hasCurrentPermanentLocation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#inSite"/>
+        <ObjectProperty abbreviatedIRI="cidoc:P54_hasCurrentPermanentLocation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isCanticumOf"/>
+        <ObjectProperty IRI="http://purl.org/spar/frbrhasPart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <ObjectProperty IRI="http://purl.org/spar/frbrisPartOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <ObjectProperty IRI="http://purl.org/spar/frbrisPartOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isVerseOf"/>
+        <ObjectProperty IRI="http://purl.org/spar/frbrisPartOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#startVerse"/>
+        <ObjectProperty abbreviatedIRI="oa:hasSource"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#subject"/>
+        <ObjectProperty IRI="http://purl.org/dc/elements/1.1/subject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#typeOfMosaic"/>
+        <ObjectProperty abbreviatedIRI="cidoc:P2_hasType"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#typeOfSubstrate"/>
+        <ObjectProperty abbreviatedIRI="cidoc:P45_consistOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#typeOfSubstrateMosaic"/>
+        <ObjectProperty IRI="#typeOfSubstrate"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#typeOfSubstratePainting"/>
+        <ObjectProperty IRI="#typeOfSubstrate"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#typeOfTesserae"/>
+        <ObjectProperty abbreviatedIRI="cidoc:P45_consistOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#usedTechnique"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#usedTechniqueMosaic"/>
+        <ObjectProperty IRI="#usedTechnique"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#usedTechniquePainting"/>
+        <ObjectProperty IRI="#usedTechnique"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://purl.org/spar/frbrhasPart"/>
+        <ObjectProperty IRI="http://purl.org/spar/frbrisPartOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#contains"/>
+        <ObjectProperty IRI="#isContainedIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasAnnotation"/>
+        <ObjectProperty IRI="#hasTarget"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasCanto"/>
+        <ObjectProperty IRI="#isCantoOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasCitingFragment"/>
+        <ObjectProperty IRI="#hasCommentary"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasVerse"/>
+        <ObjectProperty IRI="#isVerseOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#inCanticum"/>
+        <ObjectProperty IRI="#isCanticumOf"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="cidoc:P89_fallsWithin"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="cidoc:P91_hasUnit"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#contributor"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasBody"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasDimX"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasDimY"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasTimeSpan"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#inCanticum"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#inRegion"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#inSite"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isCantoOf"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isContainedIn"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isVerseOf"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="oa:hasSource"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#acquiredBy"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#hasBody"/>
+    </InverseFunctionalObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="http://purl.org/spar/frbrhasPart"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="http://purl.org/spar/frbrisPartOf"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="cidoc:P91_hasUnit"/>
+        <Class abbreviatedIRI="cidoc:E54_Dimension"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#acquiredBy"/>
+        <Class IRI="#Manuscript"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#citeAsIconographicSource"/>
+        <Class IRI="#Fragment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#citeAsLiterarySource"/>
+        <Class IRI="#Fragment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#composedOf"/>
+        <Class IRI="#Fragment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#contributor"/>
+        <Class IRI="#Annotation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#creator"/>
+        <Class IRI="#Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#endVerse"/>
+        <Class IRI="#Fragment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAnnotation"/>
+        <Class IRI="#Fragment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBody"/>
+        <Class IRI="#Annotation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCommentary"/>
+        <Class IRI="#Fragment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDim"/>
+        <Class IRI="#IconographicWork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLocation"/>
+        <Class IRI="#Site"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSelector"/>
+        <Class IRI="#Fragment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTimeSpan"/>
+        <Class IRI="#IconographicWork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#inCanticum"/>
+        <Class IRI="#Verso"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#inRegion"/>
+        <Class IRI="#IconographicWork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#inSite"/>
+        <Class IRI="#IconographicWork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <Class IRI="#Canto"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <Class IRI="#Miniature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isVerseOf"/>
+        <Class IRI="#Verso"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#startVerse"/>
+        <Class IRI="#Fragment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#subject"/>
+        <Class IRI="#Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#typeOfMosaic"/>
+        <Class IRI="#Mosaic"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#typeOfSubstrateMosaic"/>
+        <Class IRI="#Mosaic"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#typeOfSubstratePainting"/>
+        <Class IRI="#PanelPainting"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#typeOfTesserae"/>
+        <Class IRI="#Mosaic"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usedTechnique"/>
+        <Class IRI="#IconographicWork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usedTechniqueMosaic"/>
+        <Class IRI="#Mosaic"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usedTechniquePainting"/>
+        <Class IRI="#PanelPainting"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="cidoc:P91_hasUnit"/>
+        <Class abbreviatedIRI="cidoc:E58_MeasurementUnit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#acquiredBy"/>
+        <Class IRI="#Antiquary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#citeAsIconographicSource"/>
+        <Class IRI="#IconographicWork"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#citeAsLiterarySource"/>
+        <Class IRI="#LiteraryWork"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#composedOf"/>
+        <Class IRI="#Fragment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#contributor"/>
+        <Class IRI="#Scholar"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#creator"/>
+        <Class IRI="#Author"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#endVerse"/>
+        <Class IRI="#Verso"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAnnotation"/>
+        <Class IRI="#Annotation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBody"/>
+        <Class IRI="#TextualBody"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCommentary"/>
+        <Class IRI="#TextualBody"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDim"/>
+        <Class IRI="#Length"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLocation"/>
+        <Class IRI="#Region"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSelector"/>
+        <Class abbreviatedIRI="oa:Selector"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTimeSpan"/>
+        <Class IRI="#TimeSpan"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#inCanticum"/>
+        <Class IRI="#Cantica"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#inRegion"/>
+        <Class IRI="#Region"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#inSite"/>
+        <Class IRI="#Site"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCantoOf"/>
+        <Class IRI="#Cantica"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <Class IRI="#Manuscript"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isVerseOf"/>
+        <Class IRI="#Canto"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#startVerse"/>
+        <Class IRI="#Verso"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#subject"/>
+        <Class abbreviatedIRI="skos:Concept"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#typeOfMosaic"/>
+        <Class IRI="#MosaicType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#typeOfSubstrate"/>
+        <Class IRI="#Material"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#typeOfTesserae"/>
+        <Class IRI="#Material"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usedTechnique"/>
+        <Class IRI="#Technique"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#date"/>
+        <DataProperty abbreviatedIRI="cidoc:P82_ongoingThroughout"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#endDate"/>
+        <DataProperty IRI="#date"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#startDate"/>
+        <DataProperty IRI="#date"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#wikiPageID"/>
+        <DataProperty abbreviatedIRI="dbo:wikiPageID"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Name"/>
+        <Class abbreviatedIRI="foaf:Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#bodyChars"/>
+        <Class IRI="#Fragment"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#bookTitle"/>
+        <Class IRI="#Cantica"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#chNumber"/>
+        <Class IRI="#Canto"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#date"/>
+        <Class IRI="#TimeSpan"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasContent"/>
+        <Class IRI="#TextualBody"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDate"/>
+        <Class IRI="#TextualBody"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDescription"/>
+        <Class IRI="#Work"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTitle"/>
+        <Class IRI="#Work"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#length"/>
+        <Class IRI="#Length"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#lineNum"/>
+        <Class IRI="#Verso"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#wikiPageID"/>
+        <Class abbreviatedIRI="foaf:Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="oa:end"/>
+        <Class abbreviatedIRI="oa:TextPositionSelector"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="oa:start"/>
+        <Class abbreviatedIRI="oa:TextPositionSelector"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#bodyChars"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#bookTitle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#chNumber"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#date"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasContent"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDescription"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTitle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#length"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#lineNum"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#wikiPageID"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="oa:end"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="oa:start"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasBody"/>
+                <Variable IRI="urn:swrl:var#b"/>
+                <Variable IRI="urn:swrl:var#c"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasAnnotation"/>
+                <Variable IRI="urn:swrl:var#a"/>
+                <Variable IRI="urn:swrl:var#b"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasCommentary"/>
+                <Variable IRI="urn:swrl:var#a"/>
+                <Variable IRI="urn:swrl:var#c"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#inSite"/>
+                <Variable IRI="urn:swrl:var#a"/>
+                <Variable IRI="urn:swrl:var#b"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasLocation"/>
+                <Variable IRI="urn:swrl:var#b"/>
+                <Variable IRI="urn:swrl:var#c"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#inRegion"/>
+                <Variable IRI="urn:swrl:var#a"/>
+                <Variable IRI="urn:swrl:var#c"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isVerseOf"/>
+                <Variable IRI="urn:swrl:var#a"/>
+                <Variable IRI="urn:swrl:var#b"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isCantoOf"/>
+                <Variable IRI="urn:swrl:var#b"/>
+                <Variable IRI="urn:swrl:var#c"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#inCanticum"/>
+                <Variable IRI="urn:swrl:var#a"/>
+                <Variable IRI="urn:swrl:var#c"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
