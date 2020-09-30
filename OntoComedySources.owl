@@ -1,12 +1,13 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/intel/ontologies/2020/6/untitled-ontology-17"
+     xml:base="http://www.co-ode.org/ontologies/OntoComedySources"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/intel/ontologies/2020/6/untitled-ontology-17">
-    <Prefix name="" IRI="http://www.semanticweb.org/intel/ontologies/2020/6/untitled-ontology-17"/>
+     ontologyIRI="http://www.co-ode.org/ontologies/OntoComedySources"
+     versionIRI="http://www.co-ode.org/ontologies/OntoComedySources/1.">
+    <Prefix name="" IRI="http://www.co-ode.org/ontologies/OntoComedySources"/>
     <Prefix name="dc" IRI="http://purl.org/dc/terms/"/>
     <Prefix name="oa" IRI="http://www.w3.org/ns/oa/"/>
     <Prefix name="dbo" IRI="http://dbpedia.org/ontology/"/>
@@ -207,6 +208,9 @@
         <ObjectProperty IRI="#citeAsLiterarySource"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#citedIn"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#composedOf"/>
     </Declaration>
     <Declaration>
@@ -244,6 +248,12 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasDimY"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasIconographicSource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasIconographicSourceCitedIn"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasLocation"/>
@@ -1004,6 +1014,12 @@
     <Declaration>
         <NamedIndividual IRI="#70_XIX_in"/>
     </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:issued"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:license"/>
+    </Declaration>
     <SubClassOf>
         <Class abbreviatedIRI="cidoc:E29_DesignOrProcedure"/>
         <Class abbreviatedIRI="cidoc:E1_CRM_Entity"/>
@@ -2663,17 +2679,17 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#subject"/>
         <NamedIndividual IRI="#LWork2"/>
-        <NamedIndividual IRI="#storiografia"/>
+        <NamedIndividual IRI="#epica_latina"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#creator"/>
         <NamedIndividual IRI="#LWork3"/>
-        <NamedIndividual IRI="#Auth4"/>
+        <NamedIndividual IRI="#Auth2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#subject"/>
         <NamedIndividual IRI="#LWork3"/>
-        <NamedIndividual IRI="#epica_latina"/>
+        <NamedIndividual IRI="#storiografia"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#creator"/>
@@ -4338,6 +4354,10 @@ con segno di vittoria coronato.</Literal>
         <Class IRI="#Fragment"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#citedIn"/>
+        <Class IRI="#Author"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#composedOf"/>
         <Class IRI="#Fragment"/>
     </ObjectPropertyDomain>
@@ -4368,6 +4388,14 @@ con segno di vittoria coronato.</Literal>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasDim"/>
         <Class IRI="#IconographicWork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasIconographicSource"/>
+        <Class IRI="#Canto"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasIconographicSourceCitedIn"/>
+        <Class IRI="#Region"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasLocation"/>
@@ -4458,6 +4486,10 @@ con segno di vittoria coronato.</Literal>
         <Class IRI="#LiteraryWork"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#citedIn"/>
+        <Class IRI="#Canto"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#composedOf"/>
         <Class IRI="#Fragment"/>
     </ObjectPropertyRange>
@@ -4488,6 +4520,14 @@ con segno di vittoria coronato.</Literal>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasDim"/>
         <Class IRI="#Length"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasIconographicSource"/>
+        <Class IRI="#IconographicWork"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasIconographicSourceCitedIn"/>
+        <Class IRI="#Canto"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasLocation"/>
@@ -4680,6 +4720,63 @@ con segno di vittoria coronato.</Literal>
     <DLSafeRule>
         <Body>
             <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+                <Variable IRI="urn:swrl:var#b"/>
+                <Variable IRI="urn:swrl:var#a"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty abbreviatedIRI="cito:cites"/>
+                <Variable IRI="urn:swrl:var#c"/>
+                <Variable IRI="urn:swrl:var#b"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#startVerse"/>
+                <Variable IRI="urn:swrl:var#c"/>
+                <Variable IRI="urn:swrl:var#d"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isVerseOf"/>
+                <Variable IRI="urn:swrl:var#d"/>
+                <Variable IRI="urn:swrl:var#e"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#citedIn"/>
+                <Variable IRI="urn:swrl:var#a"/>
+                <Variable IRI="urn:swrl:var#e"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#citeAsIconographicSource"/>
+                <Variable IRI="urn:swrl:var#a"/>
+                <Variable IRI="urn:swrl:var#b"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#startVerse"/>
+                <Variable IRI="urn:swrl:var#a"/>
+                <Variable IRI="urn:swrl:var#c"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isVerseOf"/>
+                <Variable IRI="urn:swrl:var#c"/>
+                <Variable IRI="urn:swrl:var#d"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasIconographicSource"/>
+                <Variable IRI="urn:swrl:var#d"/>
+                <Variable IRI="urn:swrl:var#b"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ObjectPropertyAtom>
                 <ObjectProperty IRI="#hasBody"/>
                 <Variable IRI="urn:swrl:var#b"/>
                 <Variable IRI="urn:swrl:var#c"/>
@@ -4695,6 +4792,27 @@ con segno di vittoria coronato.</Literal>
                 <ObjectProperty IRI="#hasCommentary"/>
                 <Variable IRI="urn:swrl:var#a"/>
                 <Variable IRI="urn:swrl:var#c"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasIconographicSource"/>
+                <Variable IRI="urn:swrl:var#a"/>
+                <Variable IRI="urn:swrl:var#b"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#inRegion"/>
+                <Variable IRI="urn:swrl:var#b"/>
+                <Variable IRI="urn:swrl:var#c"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasIconographicSourceCitedIn"/>
+                <Variable IRI="urn:swrl:var#c"/>
+                <Variable IRI="urn:swrl:var#a"/>
             </ObjectPropertyAtom>
         </Head>
     </DLSafeRule>
@@ -4740,6 +4858,21 @@ con segno di vittoria coronato.</Literal>
             </ObjectPropertyAtom>
         </Head>
     </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:issued"/>
+        <AbbreviatedIRI>dc:issued</AbbreviatedIRI>
+        <Literal>03/09/2020</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:license"/>
+        <AbbreviatedIRI>dc:license</AbbreviatedIRI>
+        <Literal>Creative Commons Attribution 3.0 (CC BY 3.0)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <AbbreviatedIRI>owl:versionInfo</AbbreviatedIRI>
+        <Literal>1.0</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 
